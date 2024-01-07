@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,600&family=Ubuntu&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&family=Varela+Round&display=swap");
+
+body {
+    font-family: "Varela Round", sans-serif;
+    margin: 0;
+}
+#ourteam{
+    font-weight: 900;
+    font-size: xxx-large;
+}
+
+html {
+    box-sizing:border-box;
+}
+
+*, *:before, *:after {
+    box-sizing:inherit;
+}
+.brand {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+
+#about-section{
+    width:100%;
+}
+.brand img {
+    width: 44px;
+    padding: 0 8px;
+    margin-right: 1px; /* Adjust as needed for spacing between img and text */
+  }
+  .about-section ul{
+    list-style: none;
+    font-size: xx-large;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: bolder;
+    position: relative;
+ 
+  }
+  .about-section h1{
+    font-family: "Varela Round", sans-serif;
+  }
+ 
+  .about-section ul img{
+    width: 100px;
+  }
+  .about-section p{
+    font-size: 120%;
+  }
+.column {
+    float: left;
+    width: 30%;  /* Set the width to 50% for 2 team members */
+    margin-bottom: 16px;
+    padding: 0 8px;
+}
+
+/* Center the row */
+.row {
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 8px;
+    
+}
+
+.about-section {
+    padding: 50px;
+    text-align: center;
+    background-color:black;
+    color: white;
+}
+
+.container {
+    padding: 0 16px;
+}
+
+.container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.title {
+    color: grey;
+}
+
+.button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+}
+
+.button:hover {
+    background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+    .column {
+        width: 100%;
+        display: block;
+    }
+}

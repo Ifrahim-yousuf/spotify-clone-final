@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      #playPauseButton {
+        cursor: pointer;
+      }
+    </style>
+    <title>Play/Pause Icon Toggle</title>
+  </head>
+  <body>
+    <!-- Font Awesome CDN for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+
+    <!-- Play/Pause button with Font Awesome icons -->
+    <button id="playPauseButton" onclick="togglePlayPause()">
+      <i id="playPauseIcon" class="fas fa-play"></i>
+    </button>
+
+    <script>
+      let isPlaying = false;
+      const playPauseButton = document.getElementById("playPauseButton");
+      const playPauseIcon = document.getElementById("playPauseIcon");
+
+      function togglePlayPause() {
+        isPlaying = !isPlaying;
+
+        if (isPlaying) {
+          playPauseIcon.classList.remove("fa-play");
+          playPauseIcon.classList.add("fa-pause");
+          // Add logic to play the song here
+        } else {
+          playPauseIcon.classList.remove("fa-pause");
+          playPauseIcon.classList.add("fa-play");
+          // Add logic to pause the song here
+        }
+      }
+    </script>
+  </body>
+</html>
